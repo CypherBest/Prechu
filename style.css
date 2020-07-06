@@ -1,0 +1,301 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: Source Sans Pro;
+}
+
+.container{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+header{
+    background: #ffffff;
+    padding: 25px 0;
+}
+
+header .hdr{
+    display: flex;
+    justify-content: space-between;
+}
+header .hdr .logo img{
+    margin-left: 30px;
+}
+header .menu{
+    display: flex;
+    padding: 0 15px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+header .menu a{
+    font-size: 20.35px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 15px;
+    color: #6c6c6c;
+    display: inline-block;
+    border-bottom: 3px solid transparent;
+}
+
+header .menu a:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #5094f2;
+    transition: width .3s ease-in-out;
+}
+header .menu a:hover:after,
+header .menu a:focus:after {
+    width: 100%;
+}
+
+.main{
+    background: url(img/baner.png) no-repeat center center fixed;
+    background-size: cover;
+    min-width: 100%;
+}
+
+.main .baner{
+    display: flex;
+}
+
+.main .baner img{
+    width: 360px;
+    margin: 40px 0 0 60px;
+}
+
+.main .baner .content{
+    color: #ffffff;
+    margin: 150px 0 0 100px;
+}
+.main .baner .content h3{
+    font-size: 42.35px;
+    font-weight: lighter;
+    margin: 0 0 0 0;
+}
+.main .baner .content p{
+    width: 245px;
+    font-size: 26.35px;
+    font-weight: lighter;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+.main .baner .content .button{
+    display: flex;
+    background: #5094f2;
+    width: 173px;
+    height: 42px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 0 15px;
+}
+.main .baner .content .button img{
+    width: 25px;
+    padding: 0;
+    margin: 0 15px;
+}
+.main .baner .content .button p{
+    font-size: 22.35px;
+    padding: 13px 0;
+}
+
+.information{
+    display: flex;
+    justify-content: space-around;
+}
+.information .info{
+    margin: 70px 0;
+    text-align: center;
+}
+
+.information .info h3{
+    color: #6fa4f4;
+    font-size: 20.35px;
+    font-weight: normal;
+}
+.information .info p{
+    width: 255px;
+    font-size: 14.35px;
+    color: #909090;
+}
+
+.shopping{
+    padding: 0 0 0 55px;
+    color: #999999;
+}
+.shopping h3{
+    font-size: 42.35px;
+    font-weight: normal;
+    padding: 0 20px;
+}
+
+.shopping .shop_cart{
+    display: flex;
+}
+
+.shopping .shop_cart img{
+    width: 360px;
+    height: 270px;
+}
+.shopping .shop_cart .shop{
+    width: 460px;
+    margin-left: 85px;
+}
+
+.shopping .shop_cart .shop h3{
+    font-size: 26.35px;
+    margin: 0;
+    padding: 0;
+}
+
+.shopping .shop_cart .shop p{
+    font-size: 15.35px;
+    line-height: 2.0;
+}
+
+footer{
+    text-align: center;
+    color: #999999;
+}
+
+footer p{
+    padding: 35px 0;
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 658px;
+        margin: 0 auto;
+    }
+    header .hdr{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header .logo{
+        margin-left: 35px;
+    }
+    header .menu{
+        
+    }
+    
+    .main .baner{
+    }
+    
+    .main .baner img{
+        width: 190px;
+        height: 220px;
+        margin-left: 35px;
+    }
+    
+    .main .baner .content{
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+    }
+    .main .baner .content h3{
+        font-size: 31px;
+        font-weight: lighter;
+        margin-top: 25px;
+    }
+    .main .baner .content p{
+        width: 215px;
+        font-size: 22px;
+        font-weight: lighter;
+        line-height: 1.8;
+        margin: 15px 0;
+    }
+    
+    .main .baner .content .button{
+        display: flex;
+        background: #5094f2;
+        width: 173px;
+        height: 42px;
+        margin: 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main .baner .content .button img{
+        width: 25px;
+        height: 25px;
+        margin: 0 15px;
+    }
+    .main .baner .content .button p{
+        font-size: 22.35px;
+        padding: 13px 0;
+    }
+    
+    .information{
+        flex-direction: column;
+    }
+    .information .info{
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .information .info img{
+        width: 140px;
+        height: 140px;
+        margin: 25px;
+    }
+
+    .information .info .info_cart{
+        margin: 40px 0;
+        text-align: left;
+    }
+    
+    .information .info .info_cart h3{
+        color: #6fa4f4;
+        font-size: 34.13px;
+        font-weight: normal;
+        padding: 0;
+        margin: 0;
+    }
+    .information .info .info_cart p{
+        font-size: 19.35px;
+        color: #909090;
+        width: 370px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .shopping{
+        color: #999999;
+    }
+    .shopping h3{
+        font-size: 42.35px;
+        font-weight: normal;
+        margin: 35px 140px;
+    }    
+    .shopping .shop_cart{
+        flex-direction: column;
+    }
+    .shopping .shop_cart img{
+        width: 205px;
+        height: 155px;
+        margin: 0 209px;
+    }
+    .shopping .shop_cart .shop{
+        width: 460px;
+        margin: 50px 75px;
+    }
+    
+    .shopping .shop_cart .shop h3{
+        font-size: 35.35px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .shopping .shop_cart .shop p{
+        font-size: 17.35px;
+    }
+}
